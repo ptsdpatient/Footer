@@ -17,20 +17,31 @@ html{
 .bg{
     background-color:rgb(22,22,22);
     position:absolute;
-    top:20vw;
+    top:50vh;
     bottom:0vw;
     left:0vw;
     width:100vw;
-    height:28.45vw;
+    height:50vh;
     border-radius:0vw;
 }
 .footer_logo{
     position:absolute;
-    top:6vw;
+    cursor:pointer;
+    background-color: rgb(22,22,22);
+    padding-left: 2vw;
+    padding-right:2vw;
+    border-radius:4vw 4vw 0vw 0vw;
+    top:35vh;
     left:40vw;
     bottom:0vw;
     right:0vw;
     height:10vw;
+    transition: all 0.5s;
+
+}
+.footer_logo:hover{
+    transform: translateY(-0.5vw);
+    transition: all 0.5s;
 }
 .link_flex{
     display: flex;
@@ -39,7 +50,7 @@ html{
     justify-content: space-evenly;
     position:absolute;
     column-gap: 1vw;
-    top:24vw;
+    top:65vh;
     left:27.5vw;
     z-index: 1;
 }
@@ -51,15 +62,15 @@ html{
 }
 .link_flex > i:hover{
     cursor:pointer;
-    color:deepskyblue;
+    color:rgb(187, 190, 3);
     transform: translateY(-0.3vw);
-    text-shadow: 0.5vw 0.5vw rgba(0, 0, 0, 0.26);
+    box-shadow: 0vw 0.2vw 0vw 0vw rgb(187, 190, 3);
     transition: all 0.5s;
 }
 
 .upper_flex{
     position:absolute;
-    top:22vw;
+    top:55vh;
     left:0;
     right:0;
     bottom:0;
@@ -92,7 +103,7 @@ h3{
 }
 .box1{
     width:23vw;
-    height:24vw;
+    height:45vh;
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
@@ -104,7 +115,7 @@ h3{
 .box2{
     margin-top: 10vw;
     width:45vw;
-    height:14vw;
+    height:24vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -120,7 +131,7 @@ h3{
 }
 .box3{
     width:23vw;
-    height:24vw;
+    height:45vh;
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
@@ -129,7 +140,7 @@ h3{
     margin-left: auto;
     margin-right: auto;
 }
-@media only screen and (max-width:1100px),screen and (max-height:650px){
+@media only screen and (max-width:800px){
     .link_flex{
         top:25vw;
         left:26vw;
