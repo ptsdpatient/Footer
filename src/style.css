@@ -102,8 +102,10 @@ h3{
     cursor:pointer;
 }
 .box1{
+    border-radius: 2vw 2vw 0vw 0vw;
+
     width:23vw;
-    height:45vh;
+    height:50vh;
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
@@ -113,7 +115,9 @@ h3{
     margin-right: auto;
 }
 .box2{
-    margin-top: 10vw;
+    border-radius: 2vw 2vw 0vw 0vw;
+
+    margin-top: 25vh;
     width:45vw;
     height:24vh;
     display: flex;
@@ -130,8 +134,10 @@ h3{
     margin-right: auto;
 }
 .box3{
+    border-radius: 2vw 2vw 0vw 0vw;
+
     width:23vw;
-    height:45vh;
+    height:50vh;
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
