@@ -28,7 +28,7 @@ html{
 }
 .footer_logo{
     display:table;
-    cursor:pointer;
+    /* cursor:pointer; */
     margin-left: auto;
     margin-right:auto;
     margin-top: -5vw;
@@ -78,7 +78,7 @@ html{
     bottom:0;
     display:flex;
     flex-direction: row;
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
     justify-content: space-around;
     transition: all 0.5s;
 
@@ -124,13 +124,13 @@ h3{
     width:45vw;
     height:24vh;
     display: flex;
-    flex-wrap: wrap;
+  
     flex-direction: column;
     justify-content: space-evenly;
 }
 .box2 > article{
     display:flex;
-    flex-flow:row wrap;
+    flex-direction: row;
     justify-content: space-evenly;
 }
 .box2 >p{
@@ -176,7 +176,7 @@ h3{
         font-size: 6vw;
     }
     .bg{
-        height:150vw;
+        height:110%;
         width:100%;
         top:10vh;
         margin-left:auto;
@@ -184,38 +184,42 @@ h3{
     }
     .upper_flex{
     top:30vh;
-    left:0vw;
-    bottom:0;
-    width:5vw;
-    height:65vh;
-    justify-content: space-around;
+    left:33vw;
+    right:0vw; 
+    bottom:0vw;
+    width:35vw;
+    height:85%;
+    justify-content: space-evenly;
     flex-direction: column;
     }
     h3{
         font-size:3vw;
     }
     p{
-        font-size:2.5vw;
+        font-size:2.2vw;
     }
     .box1{
-        height:20vh;
+        height:30vh;
         width:35vw;
     }
     .box2{
-        height:20vh;
+        margin-top: 0vh;
+        height:30vh;
         width:35vw;
         
     }
     .box2>article{
         flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .box2>article>p{
         margin-left: auto;
-        margin-right:auto
+        margin-right:auto;
     }
     .box3{
-        height:20vh;
+        height:30vh;
         width:35vw;
-        margin-left: auto;
-        margin-right:auto
+       
     }
     
 }
