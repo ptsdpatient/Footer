@@ -5,39 +5,35 @@
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-
 </head>
 <body>
-<div class="bg"><img class="footer_logo" src="logo.webp">
+<div class="bg"><img id="bgfl" class="footer_logo" src="logo.webp">
 </div>
-<div class="link_flex">
-    <i class="fa fa-envelope"></i>
-    <i class="fa fa-twitter"></i>
-    <i class="fa fa-instagram"></i>
-  <i class="fa fa-youtube-play"></i>
-    <i class="fa fa-linkedin-square"></i>
-</div>
+<div class="link_flex"><i class="fa fa-envelope"></i><i class="fa fa-twitter"></i><i class="fa fa-instagram"></i><i class="fa fa-youtube-play"></i><i class="fa fa-linkedin-square"></i></div>
 
 <div class="upper_flex">    
-<div class="box1">
-   <h3>Contact Us</h3>
-   <p>Contact Info</p>
-   <p>Teams</p>
-</div>
-<div class="box2">
-    <h3>College</h3>
-<article>
-    <p>About Us</p>
-    <p>GCOEN</p>
-</article>
-</div>
-<div class="box3">
-    <h3>Support</h3>
-    <p>Terms and Condition</p>
-    <p>Privacy Policy</p>
-</div>
+<div class="box1"><h3>Contact Us</h3><p>Contact Info</p><p>Teams</p></div>
+<div class="box2"><h3>College</h3><article><p id="about_us_button">About Us</p><p>GCOEN</p></article></div>
+<div class="box3"><h3>Support</h3><p>Terms and Condition</p><p>Privacy Policy</p></div>
 </div>
 
+<div id="about_us">
+    <img id="aufl" class="footer_logo" src="logo.webp">
+    <h2>GOVERNMENT COLLEGE OF ENGINEERING NAGPUR</h2>
+    <h4>ABOUT US</h4>
+    <p>ADHYAAYA 2023 is the sixth iteration of the national level technical symposium of Government College of Engineering, Nagpur. Students from all over India set their keen eyes on Adhyaaya. Last year, more than 6000 budding technocrats from all across India marked their remarkable presence in Adhyaaya'22. The event consists of various technical, non-technical segments along with workshops on topics spread all over the diverse scopes of engineering. We strive to offer a platform for the student community to develop and showcase their skill sets and technical prowess by presenting them events from model presentations, code-hunts to e-sports and technical workshops. Adhyaaya is considered to be a promising technical fest in Nagpur and an experience to be remembered.</p>
+    <h4>Adhyaaya: A Legacy of Infinite Chapters.</h4>
+    <input type="submit" value="close" onclick="hide_au()">
+</div>
+<script>
+    var au = document.getElementById("about_us_button");
+    au.onclick= ()=>{     
+        document.getElementById("about_us").style.display="block";
+    }
+    function hide_au(){
+        document.getElementById("about_us").style.display="none";
+    }
+
+</script>
 </body>
 </html>

@@ -26,12 +26,14 @@ html{
 
     border-radius:0vw;
 }
+#bgfl{
+    margin-top: -5vw;
+}
 .footer_logo{
     display:table;
     /* cursor:pointer; */
     margin-left: auto;
     margin-right:auto;
-    margin-top: -5vw;
     background-color: rgb(22,22,22);
     padding-left: 2vw;
     padding-right:2vw;
@@ -88,19 +90,19 @@ html{
     background-color: rgb(25,25,25);
     transition: all 0.5s;
 }
- p{
+ .box1 p, .box2 p,.box3 p{
     font-size: 1.5vw;
     cursor:pointer;
     transition: all 0.5s;
 }
-p:hover{
+.box1 p:hover, .box2 p:hover,.box3 p:hover{
     user-select:none;
     transform: translateY(-0.2vw);
     color:rgb(72, 167, 255);
     box-shadow:0px 2px 0px 0.01px rgb(72, 167, 255);
     transition: all 0.5s;
 }
-h3{
+.box1 h3,.box2 h3,.box3 h3{
     margin-left: auto;
     margin-right: auto;
     font-size: 1.7vw;
@@ -149,6 +151,47 @@ h3{
     margin-left: auto;
     margin-right: auto;
 }
+
+#about_us{
+position: fixed;
+top:0;
+left:0;
+display:flex;
+flex-direction: column;
+margin-left: auto;
+margin-right: auto;
+height:100%;
+width:100%;
+background-color: #141414c7;
+z-index: 9;
+text-align: center;
+}
+#about_us>h2{
+    font-size: 2vw;
+}
+#about_us > h4{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 1.8vw;
+}
+#about_us > p{
+    font-size: 1.3vw;
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 150%;
+}
+#about_us > input{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3vw;
+  font-size: 1.5vw;
+  border-radius: 0.6vw;
+  width:5.5vw;
+  height:2.4vw;
+  border-style: none;
+  background-color: aliceblue;
+}
 @media only screen and (max-width:600px){
     html{
         background-color:blueviolet;
@@ -165,6 +208,7 @@ h3{
         height:10vw;
     }
     .link_flex{
+        /* width:60vw; */
         position: absolute;
         margin-top:-45vh;
         margin-bottom: 0vh;
@@ -176,26 +220,26 @@ h3{
         font-size: 6vw;
     }
     .bg{
-        height:110%;
-        width:100%;
-        top:10vh;
+        height:160vw;
+        width:100vw;
+        top:10vw;
         margin-left:auto;
         margin-right:auto;
     }
     .upper_flex{
-    top:30vh;
+    top:50vw;
     left:33vw;
     right:0vw; 
     bottom:0vw;
     width:35vw;
-    height:85%;
+    height:100vw;
     justify-content: space-evenly;
     flex-direction: column;
     }
-    h3{
+    .upper_flex h3{
         font-size:3vw;
     }
-    p{
+    .upper_flex p{
         font-size:2.2vw;
     }
     .box1{
@@ -222,4 +266,8 @@ h3{
        
     }
     
+    #about_us{
+    justify-content: space-evenly;
+    height:80%;
+    }
 }
