@@ -162,11 +162,12 @@ html{
 }
 
 .footer_bottom{
-    display:table;
-    font-size: 1.3vw;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:93vh;
+    display:block;
+    font-size: 1.4vw;   
+    margin-top: 93vh;
+    width:100%;
+    text-align: center;
+    /* margin-top:93vh; */
     /* z-index:9; */
 }
 
@@ -298,8 +299,11 @@ html{
         /* align-items: center; */
     }
     .footer_bottom{
+        /* position:absolute; */
         opacity:80%;
-        font-size:3.6vw;
-        margin-top:114vh;
+        text-align: center;
+        font-size:3.4vw;
+        margin-top: 115vh;
+        
     }
 }
