@@ -1,12 +1,18 @@
 @font-face{
     font-family: 'data';
     src:url('data.otf');
-
 }
+
+
 html{
     font-family:Arial, Helvetica, sans-serif;
     background-color:rgb(13, 50, 83);
     color:aliceblue;
+}
+.footer_wrap{
+    position:relative;
+    right:0.7vw;
+    top:100vh;
 }
 .bg{
     background-color:rgb(22,22,22);
@@ -163,8 +169,9 @@ html{
 
 .footer_bottom{
     display:block;
-    font-size: 1.4vw;   
-    margin-top: 93vh;
+    position:absolute;
+    font-size: 1.4vw;      
+    top: 93vh;
     width:100%;
     text-align: center;
     /* margin-top:93vh; */
@@ -175,6 +182,10 @@ html{
     html{
         background-color:blueviolet;
     }
+    .footer_wrap{
+        right:2.5vw;
+    }
+ 
     .footer_logo{
         display:table;
         margin-top:0vh;
@@ -244,11 +255,6 @@ html{
         margin-top:0vw;
         margin-bottom:0vw;
     }
-    .box1 > p{
-        
-        /* margin:0vw; */
-        /* text-align: center; */
-    }
     .box2{
         opacity:1;
         margin-top: 0vh;
@@ -287,23 +293,11 @@ html{
         margin-left: auto;
         margin-right: auto;   
     }
-    .box3 > h3{
-        /* margin:0vw; */
-    }
-    .box3 > p{
-        /* margin:0vw; */
-        /* text-align: center; */
-    }
-    .box1 > p,.box3 > p{
-        
-        /* align-items: center; */
-    }
     .footer_bottom{
-        /* position:absolute; */
         opacity:80%;
         text-align: center;
         font-size:3.4vw;
-        margin-top: 115vh;
+        top: 115vh;
         
     }
 }
